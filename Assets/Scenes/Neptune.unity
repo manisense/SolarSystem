@@ -1670,7 +1670,7 @@ GameObject:
   - component: {fileID: 410823819}
   - component: {fileID: 410823818}
   - component: {fileID: 410823817}
-  - component: {fileID: 410823816}
+  - component: {fileID: 410823820}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1697,19 +1697,6 @@ RectTransform:
   m_AnchoredPosition: {x: 150, y: -100}
   m_SizeDelta: {x: 200, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &410823816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410823814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcb3c327233c14e5383fecfaea2a3632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoHome
-  homeScene: HomeScreen
 --- !u!114 &410823817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,9 +1741,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 410823816}
-        m_TargetAssemblyTypeName: GoHome, Assembly-CSharp
-        m_MethodName: OnClickGoHome
+      - m_Target: {fileID: 410823820}
+        m_TargetAssemblyTypeName: BackButtonProxy, Assembly-CSharp
+        m_MethodName: OnClickBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1804,6 +1791,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410823814}
   m_CullTransparentMesh: 1
+--- !u!114 &410823820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410823814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6026763986e4f4f82c7c625beacadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackButtonProxy
 --- !u!1 &414837684
 GameObject:
   m_ObjectHideFlags: 0
